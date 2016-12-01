@@ -1,6 +1,7 @@
 package com.dongshujin.demo.algorithm.offer;
 
-import com.dongshujin.demo.algorithm.PrintUtils;
+
+import com.dongshujin.demo.algorithm.utils.PrintUtils;
 
 /**
  * Created by dongsj on 16/11/30.

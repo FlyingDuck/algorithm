@@ -42,6 +42,35 @@ public class Question12 {
 
     }
 
+    public void printToMaxNDigits3(int n) {
+        if (n<=0) {
+            throw new IllegalArgumentException();
+        }
+
+        char[] bigNum = new char[n];
+        for (int i=0; i<n; i++) {
+            bigNum[i] = '0';
+        }
+
+        for (int i=0; i<10; i++) {
+            bigNum[0] = (char) ('0'+i);
+            printToMaxOfNDigitsRecursively(bigNum, 0);
+        }
+    }
+
+    private void printToMaxOfNDigitsRecursively(char[] bigNum, int index) {
+        if (index == bigNum.length-1) {
+            printBigNum(bigNum);
+            return;
+        }
+
+        for (int i=0; i<10; i++) {
+            bigNum[index+1] = (char) ('0'+i);
+            printToMaxOfNDigitsRecursively(bigNum, index+1);
+        }
+    }
+
+
 
     private boolean increment(char[] bigNum) {
         boolean isOverFlow = false;
@@ -91,7 +120,9 @@ public class Question12 {
         //question12.increment(bigNum);
         //question12.printBigNum(bigNum);
 
-        question12.printToMaxNDigits(2);
+       // question12.printToMaxNDigits(2);
+
+        question12.printToMaxNDigits3(2);
 
     }
 

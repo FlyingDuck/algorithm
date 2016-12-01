@@ -1,13 +1,18 @@
-package com.dongshujin.demo.algorithm;
+package com.dongshujin.demo.algorithm.offer;
 
 /**
  * Created by dongsj on 16/11/28.
  *
- * URL编码，例如将字符串 "http://www.domain.com?name=dong shujin&location=BeiJin HaiDian#"字符串中空格字符替换成"％20"得到新字符串，（原字符串用#标记结束）
  */
-public class ReplaceBlank {
+public class Question4 {
 
     private final char[] REPLACE_CHARS = new char[]{'%','2', '0'};
+
+    /*
+    Q：URL编码，例如将字符串 "http://www.domain.com?name=dong shujin&location=BeiJin HaiDian#"字符串中空格字符替换成"％20"得到新字符串，（原字符串用#标记结束）
+    A：
+     */
+
 
     /**
      *
@@ -43,7 +48,20 @@ public class ReplaceBlank {
             }
             p1--;
         }
-
-
     }
+
+    public static void main(String[] args) {
+        char[] chars = new char[100];
+        String str = "http://www.domain.com?name=dong shujin&location=BeiJin HaiDian#";
+        char[] charStr = str.toCharArray();
+
+        for (int i=0; i<charStr.length; i++) {
+            chars[i] = charStr[i];
+        }
+
+        System.out.println("chars: " + new String(chars));
+        new Question4().replace(chars, 100);
+        System.out.println("chars: " + new String(chars));
+    }
+
 }
