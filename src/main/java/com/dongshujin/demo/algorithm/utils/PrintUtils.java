@@ -9,11 +9,13 @@ public class PrintUtils {
         for (int num : array) {
             System.out.print(" " + num);
         }
+        System.out.println();
     }
 
     public static void printArray(char[] array) {
         for (char ch : array) {
             System.out.print(" " + ch);
         }
+        System.out.println();
     }
 }
