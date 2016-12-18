@@ -1,7 +1,5 @@
 package com.dongshujin.demo.algorithm.offer.heap;
 
-import com.dongshujin.demo.algorithm.utils.PrintUtils;
-
 /**
  * Created by dongsj on 16/12/3.
  */
@@ -55,8 +53,6 @@ public class MinHeap {
         for (int i=array.length/2-1; i>=0; i--) {
             siftDown(i);
         }
-
-
     }
 
     /**
@@ -186,6 +182,12 @@ public class MinHeap {
 //
 //        minHeap.add(0);
 //        PrintUtils.printArray(minHeap.heap);
+
+        MinHeap minHeap1 = new MinHeap(3);
+        minHeap1.add(7);
+        minHeap1.add(4);
+        minHeap1.add(9);
+        minHeap1.printHeap();
     }
 
 }

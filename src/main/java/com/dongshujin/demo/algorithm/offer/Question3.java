@@ -14,7 +14,6 @@ public class Question3 {
      */
 
     public boolean find(int[][] array, int target) {
-        boolean found = false;
 
         if (null != array) {
             int totalRows = array.length;
@@ -29,13 +28,12 @@ public class Question3 {
                 } else if (array[row][columns] > target) {
                     columns--;
                 } else {
-                    found = true;
-                    break;
+                    return true;
                 }
             }
         }
 
-        return found;
+        return false;
     }
 
 

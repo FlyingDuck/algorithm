@@ -23,7 +23,7 @@ public class Question8 {
        int mid = start;
 
 
-       while (array[start] >= array[end]) {
+       while (array[start] >= array[end]) {  // start 最终会标记数组中最大的数，end标记最小的那个数
            if (end-start==1) {
                mid = end;
                break;
@@ -53,7 +53,7 @@ public class Question8 {
    }
 
    public static void main(String[] args) {
-       int[] array1 = new int[]{3,4,5,1,2};
+       int[] array1 = new int[]{3,4,5,1,2,2};
        int[] array2 = new int[]{1,1,1,1,0,1,1};
 
        Question8 question8 = new Question8();

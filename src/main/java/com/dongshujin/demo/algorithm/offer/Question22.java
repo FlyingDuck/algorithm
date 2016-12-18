@@ -30,7 +30,7 @@ public class Question22 {
             // 判断栈顶元素是否是当前出栈元素
             // 1，是当前出栈元素 则出栈
             // 2，不是当前出栈元素 则继续入栈
-            if (!stack.isEmpty() && stack.peek() == popOrder[popIndex]) { // 是但前元素，出栈
+            if (!stack.isEmpty() && stack.peek() == popOrder[popIndex]) { // 是当前元素，出栈
                 stack.pop();
                 popIndex++;
             } else {

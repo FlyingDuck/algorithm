@@ -1,5 +1,7 @@
 package com.dongshujin.demo.algorithm.sort;
 
+import com.dongshujin.demo.algorithm.utils.PrintUtils;
+
 /**
  * Created by dongsj on 16/11/29.
  */
@@ -58,15 +60,12 @@ public class MergeSorter {
 
     public static void main(String[] args) {
         int[] array = new int[]{7, 9, 1, 4, 6, 0, 2, 8,10, 4, 5};
-        int[] sortedArray = new MergeSorter().toSort(array);
+        int[] array2 = new int[]{1,1,1,1};
+        int[] array3 = new int[]{1,1,1,1, 0, 0, 0};
+        int[] sortedArray = new MergeSorter().toSort(array3);
         System.out.print("result : ");
-//        for (int i=0; i<sortedArray.length; i++) {
-//            System.out.print(sortedArray[i] + " ");
-//        }
 
-        for (int num : sortedArray) {
-            System.out.print(num+" ");
-        }
+        PrintUtils.printArray(sortedArray);
     }
 
 

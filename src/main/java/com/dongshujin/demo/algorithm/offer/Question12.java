@@ -79,18 +79,18 @@ public class Question12 {
 
         for (int i=nLength-1; i>=0; i--) {
             int nSum = bigNum[i] - '0' + nTakeOver;
-            if (i == nLength-1) {
+            if (i == nLength-1) { // 是个位的话 就需要再各位上执行加1运算
                 nSum++;
             }
-            if (nSum >= 10) {
-                if (i == 0) {
+            if (nSum >= 10) { // 判断需要进位
+                if (i == 0) { // 已经是最高位，则表示为溢出
                     isOverFlow = true;
-                } else {
-                    nSum -= 10;
-                    nTakeOver = 1;
-                    bigNum[i] = (char) ('0' + nSum);
+                } else { // 不是最高位，
+                    nSum -= 10; // 将sum置0
+                    nTakeOver = 1; // 进1
+                    bigNum[i] = (char) ('0' + nSum); // 当前位设置成0
                 }
-            } else {
+            } else { // 不需要进位 则自增结束，跳出循环
                 bigNum[i] = (char) ('0'+nSum);
                 break;
             }

@@ -73,11 +73,17 @@ public class QuickSorter {
 
     public static void main(String[] args) {
         int[] array = new int[]{4, 7, 9, 2, 1, 7, 9, 0, 3, -1};
+        int[] array1 = new int[]{1};
+        int[] array2 = new int[]{1, 1, 1};
 
         QuickSorter sorter = new QuickSorter();
         sorter.execute(array);
+        sorter.execute(array1);
+        sorter.execute(array2);
 
         PrintUtils.printArray(array);
+        PrintUtils.printArray(array1);
+        PrintUtils.printArray(array2);
 
     }
 }

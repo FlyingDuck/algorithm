@@ -64,6 +64,8 @@ public class Question18 {
             return false;
         }
 
+        // 先判断 父节点是否相同
+        // 递归判断左右子树 是否相同
         if (tree1.data != tree2.data) {
             return false;
         }
