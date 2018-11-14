@@ -31,7 +31,7 @@ public class Code141 {
         return true;
     }
 
-    class ListNode {
+    private class ListNode {
         int val;
         ListNode next;
 
