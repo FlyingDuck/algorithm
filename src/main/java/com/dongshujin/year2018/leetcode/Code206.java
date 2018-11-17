@@ -1,5 +1,7 @@
 package com.dongshujin.year2018.leetcode;
 
+import com.dongshujin.year2018.leetcode.structure.ListNode;
+
 public class Code206 {
 
     public ListNode reverseList(ListNode head) {
