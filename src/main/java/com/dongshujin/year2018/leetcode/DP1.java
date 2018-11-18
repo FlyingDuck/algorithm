@@ -1,5 +1,8 @@
 package com.dongshujin.year2018.leetcode;
 
+/**
+ * https://www.geeksforgeeks.org/partition-a-set-into-two-subsets-such-that-the-difference-of-subset-sums-is-minimum/
+ */
 public class DP1 {
 
     public int findMin(int[] arr) {
