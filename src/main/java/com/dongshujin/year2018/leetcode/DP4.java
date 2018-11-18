@@ -1,6 +1,11 @@
 package com.dongshujin.year2018.leetcode;
 
-public class Code300_DP {
+/**
+ * https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
+ * or
+ * LeetCode-300
+ */
+public class DP4 {
 
     public int lengthOfLIS(int[] nums) {
         if (null == nums)
@@ -27,7 +32,7 @@ public class Code300_DP {
     public static void main(String[] args) {
         int arr[] = { 10, 22, 9, 33, 21, 50, 41, 60 };
 
-        int result = new Code300_DP().lengthOfLIS(arr);
+        int result = new DP4().lengthOfLIS(arr);
 
         System.out.println(result);
     }
